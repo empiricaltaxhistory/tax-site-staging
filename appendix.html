@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Appendix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      background: #fafafa;
+      color: #111;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+  .soi-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 16px;
+margin: 24px 0;
+align-items: start;
+}
+
+.soi-figure {
+margin: 0;
+text-align: center;
+}
+
+
+.soi-figure figcaption {
+font-size: 12px;
+margin-top: 6px;
+color: #444;
+}
+
+.soi-source {
+  margin-top: 18px;
+}
+
+.note {
+  margin-top: 10px;
+}
+
+
+
+    nav {
+      font-size: 14px;
+      margin-bottom: 26px;
+      color: #666;
+    }
+    nav a {
+      color: #111;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0 0 18px 0;
+      letter-spacing: -0.02em;
+    }
+    p, li {
+      line-height: 1.55;
+    }
+    /* Hover zoom (lightbox-style zoom within the thumbnail tile) */
+.soi-lightbox {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.soi-thumb-wrap {
+  width: 100%;
+  height: 180px;            /* match your thumbnail height */
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.soi-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;       /* preserves full page in thumbnail */
+  display: block;
+  transform: scale(1);
+  transform-origin: center center;
+  transition: transform 140ms ease, filter 140ms ease;
+  cursor: zoom-in;
+}
+
+.soi-lightbox:hover .soi-thumb,
+.soi-lightbox:focus .soi-thumb {
+  transform: scale(1.6);     /* adjust: 1.4–2.0 depending on taste */
+  filter: contrast(1.03);
+}
+
+/* Modal viewer */
+.soi-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.78);
+  display: none;
+  z-index: 9999;
+  padding: 24px;
+}
+
+.soi-modal.is-open {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.soi-modal-dialog {
+  width: min(1200px, 96vw);
+  height: min(92vh, 900px);
+  background: #111;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.55);
+}
+
+.soi-modal-toolbar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.soi-modal-btn {
+  appearance: none;
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.soi-modal-btn:hover {
+  background: rgba(255,255,255,0.18);
+}
+
+.soi-modal-stage {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: #111;
+  padding: 56px 18px 18px 18px;
+  box-sizing: border-box;
+}
+
+.soi-modal-img {
+  max-width: none;           /* key: do not clamp */
+  height: auto;
+  display: block;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.soi-cta {
+  margin: 18px 0 8px 0;
+}
+
+.soi-btn {
+  display: inline-block;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+}
+
+.soi-btn:hover {
+  background: #f3f3f3;
+}
+
+.soi-cta-sub {
+  margin-top: 8px;
+  color: #555;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+
+/* Source / note spacing */
+.soi-source { margin-top: 18px; }
+.note { margin-top: 10px; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+  <a href="index.html">Overview</a> ·
+  <a href="table-of-contents.html">Table of Contents</a> ·
+  <a href="methods.html">Methods</a> ·
+  <a href="sources.html">Bibliography</a>
+</nav>
+
+<h1>Appendices</h1>
+
+<h2 id="appendix-a-methodology">Appendix A: Methodology</h2>
+
+<div class="note">
+<p>
+This study employs a consistent empirical framework to evaluate behavioral responses to
+major statutory and structural changes in federal income-tax policy from 1913 to 2000,
+a period in which continuous and internally consistent data permit meaningful cross-era
+comparison. Earlier episodes (1861–1872 and 1894–1895) are addressed briefly to provide
+the constitutional and philosophical foundation for the modern system. Because statutory
+definitions, periods of persistent inflation, administrative practices, and data reporting
+standards change across time, the analysis relies on a unified set of conventions designed
+to maximize comparability while maintaining fidelity to the underlying sources. These
+conventions are described below.
+</p>
+
+<h3>1. Inflation Adjustments</h3>
+<p>
+All nominal values are converted to constant 2017 dollars using official Bureau of Labor
+Statistics series. For 1913 through 1976 the analysis uses the Consumer Price Index for All
+Urban Consumers (CPI-U), and for 1977 onward the analysis relies on the Consumer Price
+Index Research Series (CPI-U-RS). CPI-U-RS is chosen for the post-1977 period because it
+provides a backward-consistent index that incorporates modern methodological
+improvements. Using the CPI-U/CPI-U-RS combination preserves comparability while
+avoiding discontinuities introduced by post-hoc revisions.
+</p>
+<p>
+All deflation is performed on a calendar-year basis. Where IRS Statistics of Income (SOI)
+data are published in current dollars, income amounts and revenue aggregates are
+converted to constant 2017 dollars. Statutory bracket thresholds are shown in real terms
+only for comparison across periods and do not represent indexed brackets prior to 1985.
+Throughout the manuscript, whole-numbered tables report values in nominal dollars, while
+decimal-numbered tables report the same series in constant 2017 dollars.
+</p>
+<p>
+Macroeconomic aggregates reported by the Office of Management and Budget (OMB),
+including revenues, outlays, and debt, are expressed using GDP price indices rather than
+CPI-based deflators and are reported on a fiscal-year basis. Where GDP-deflated series are
+used, they are presented as shares of gross domestic product rather than converted to
+CPI-adjusted dollar levels. As a result, real-dollar values derived from GDP-deflated sources
+differ modestly from CPI-U or CPI-U-RS conversions, although comparative trends and
+relationships are unaffected.
+</p>
+
+<h3>2. Primary Tax Data Sources</h3>
+<p>
+The principal source for taxpayer behavior is the Internal Revenue Service Statistics of
+Income (SOI), including Individual Income Tax Returns, Net Income tables, Adjusted Gross
+Income tables, Revenue tables, and Historical Table 1 where applicable. The analysis relies
+exclusively on tables published contemporaneously or in the IRS’s annual compilations,
+without reconstruction or retroactive adjustment.
+</p>
+<p>
+Because SOI data reflect reported taxable income rather than total economic income, the
+analysis treats SOI values as behavioral indicators. Reported income rises or falls in
+response to incentives, definitions, and enforcement environments; it does not directly
+measure underlying economic inequality. This distinction is fundamental to the
+interpretive framework of the manuscript.
+</p>
+
+<h3>3. Income Definitions and Comparability</h3>
+<p>
+Across the century covered here, income definitions change substantially. Until 1943, the
+IRS reported Net Income After Credits, which differs from post-1944 Adjusted Gross Income
+(AGI). The Revenue Act of 1944 introduced AGI and reorganized the tax base accordingly.
+Later reforms further complicate comparisons.
+</p>
+<p>
+The Tax Reform Act of 1986 represents a major definitional break, eliminating numerous
+shelters, limiting passive losses, altering depreciation rules, and reclassifying certain
+categories of income. As a result, AGI values reported prior to 1986 are not directly
+comparable to AGI values after 1986. This study treats TRA86 as the single most important
+measurement discontinuity in the postwar series and interprets post-1986 increases in
+high-income AGI with appropriate caution.
+</p>
+<p>
+No attempt is made to create a synthetic harmonized series; instead, discontinuities are
+acknowledged explicitly where they affect interpretation.
+</p>
+
+<h3>4. Tax-Rate Data</h3>
+<p>
+Statutory rates are drawn from the Treasury Department’s “Individual Income Tax Rates
+and Tax Shares” and accompanying Historical Rate Schedules. These schedules show
+normal tax, surtax, exemptions, bracket thresholds, and marginal rates. Because statutory
+rates differ from effective burdens, the analysis treats rate schedules as indicators of
+marginal incentive structures, not as summaries of actual tax payments.
+</p>
+<p>
+All comparisons involving rate changes are grounded in statutory legislation, which is
+identified where comprehensive changes to the tax code are enacted. Throughout the
+manuscript, references to “tax cuts” denote statutory reductions in marginal tax rates. They
+do not imply reductions in aggregate liabilities or receipts, which depend on income
+composition, behavioral response, and macroeconomic conditions.
+</p>
+
+<h3>5. Revenue, Spending, and Macroeconomic Data</h3>
+<p>
+Macroeconomic aggregates—receipts, outlays, deficits, debt, unemployment, real GDP
+growth, and inflation—are taken from the Office of Management and Budget Historical
+Tables, the Bureau of Economic Analysis National Income and Product Accounts, and the
+Bureau of Labor Statistics. All fiscal aggregates are expressed as shares of gross domestic
+product where possible to permit consistent comparison across eras of differing nominal
+scales, population sizes, and price levels.
+</p>
+<p>
+Because OMB tables are reported on a fiscal-year basis, while SOI data reflect calendar
+years, the analysis treats each series within its own temporal conventions without attempt
+to force artificial alignment. Historical GDP series prior to the availability of modern BEA
+tables draw on BEA reconstructions and Measuring Worth where necessary; these series use
+GDP price indices rather than CPI deflators.
+</p>
+
+<h3>6. Behavioral Interpretation</h3>
+<p>
+The analysis views taxpayer responses through the lens of behavioral economics and
+public-finance research. Because individuals optimize along the margins defined by
+statutory rates, deductions, exemptions, and shelter availability, reported income is treated
+as a function of the incentive environment.
+</p>
+<p>
+This approach is consistent with empirical literature on the elasticity of reported income
+(ETI), which captures how taxable income responds to changes in marginal rates. ETI-based
+reasoning is used here to interpret movements in high-income reporting across the century,
+but the manuscript does not assign a fixed elasticity parameter. Instead, it draws on
+observed changes in SOI values.
+</p>
+<p>
+Capital gains realizations are treated as behavioral responses to statutory rate changes
+rather than as measures of underlying wealth accumulation. Spikes and collapses in
+reported gains are interpreted as timing effects unless corroborated by sustained changes
+in income shares or receipts.
+</p>
+
+<h3>7. Treatment of Non-Filers, Base Erosion, and Tax Units</h3>
+<p>
+SOI data reflect tax units that file returns; non-filers do not appear. In periods where
+exemptions rise substantially (notably 1925–1931), millions of low-income individuals
+cease filing, reducing the count of returns but not the underlying population. This
+manuscript estimates the magnitude of “missing filers” where relevant but does not impute
+income to non-filers.
+</p>
+<p>
+The analysis instead focuses on documented changes within the filing population. Patterns
+of base erosion, bracket creep, and shelter use are discussed where statutory or inflationary
+conditions encourage them. The term “tax unit” refers to a filing return as recorded in SOI
+data; “taxpayer” or “earner” is used only when describing behavioral decision-making rather
+than accounting outcomes.
+</p>
+
+<h3>8. Legislative and Institutional Context</h3>
+<p>
+Because tax rules evolve within a constitutional and institutional framework, this study
+incorporates legislative history from presidential messages, congressional debates,
+committee reports, voting results, and statutory language. The analysis respects the
+constitutional allocation of revenue-raising authority to the House of Representatives and
+situates tax enactments within the political alignments of each period.
+</p>
+<p>
+This contextualization is descriptive rather than normative; the manuscript avoids
+attributing motive except where documentary evidence clearly supports it.
+</p>
+
+<h3>9. Scope and Limitations</h3>
+<p>
+The study primarily limits itself to federal income tax behavior and does not evaluate
+payroll taxes, state and local taxation, or wealth effects except where these intersect
+directly with federal incentives. Corporate, state, and local taxes are noted where material.
+The analysis does not attempt to measure “true” economic inequality; the manuscript’s
+claims are confined to what the federal income-tax system records.
+</p>
+<p>
+Causal claims are made cautiously, with explicit recognition that macroeconomic outcomes
+result from interacting monetary, fiscal, demographic, and external factors. When
+attribution is uncertain, the manuscript states so explicitly.
+</p>
+
+<h3>10. Replicability</h3>
+<p>
+All data used in this study are publicly available from IRS SOI, OMB, BEA, and BLS.
+Spreadsheet formulas for deflation, percentage changes, and series alignment use standard
+arithmetic procedures documented directly in the manuscript's tables. The conversion
+methods, deflators, and comparability notes provided here are sufficient for replicating
+every table and figure in the manuscript.
+</p>
+<p>
+Much of the historical IRS Statistics of Income data used in this study—particularly for the
+period prior to mid-century digitization—required manual extraction from original Bureau
+of Internal Revenue and IRS publications. Appendix B reproduces these primary tables in
+their original published format to preserve contemporaneous definitions, reporting
+conventions, and internal structure, and to allow independent verification without the risk
+of transcription or normalization drift.
+</p>
+
+</div>
+
+<h2 id="appendix-b-soi-tables">Appendix B: IRS Statistics of Income Tables</h2>
+
+<p>Primary IRS Statistics of Income Tables (1914-2000).</p>
+
+<div class="soi-grid">
+
+  <figure class="soi-figure">
+    <a class="soi-lightbox" href="tax-site-staging-appendix-b/soi-1918.png">
+      <div class="soi-thumb-wrap">
+        <img class="soi-thumb" src="tax-site-staging-appendix-b/soi-1918.png" alt="IRS Statistics of Income table, 1918">
+      </div>
+    </a>
+    <figcaption>1918</figcaption>
+  </figure>
+
+  <figure class="soi-figure">
+    <a class="soi-lightbox" href="tax-site-staging-appendix-b/soi-1936.png">
+      <div class="soi-thumb-wrap">
+        <img class="soi-thumb" src="tax-site-staging-appendix-b/soi-1936.png" alt="IRS Statistics of Income table, 1936">
+      </div>
+    </a>
+    <figcaption>1936</figcaption>
+  </figure>
+
+  <figure class="soi-figure">
+    <a class="soi-lightbox" href="tax-site-staging-appendix-b/soi-1965.png">
+      <div class="soi-thumb-wrap">
+        <img class="soi-thumb" src="tax-site-staging-appendix-b/soi-1965.png" alt="IRS Statistics of Income table, 1965">
+      </div>
+    </a>
+    <figcaption>1965</figcaption>
+  </figure>
+
+  <figure class="soi-figure">
+    <a class="soi-lightbox" href="tax-site-staging-appendix-b/soi-1986.png">
+      <div class="soi-thumb-wrap">
+        <img class="soi-thumb" src="tax-site-staging-appendix-b/soi-1986.png" alt="IRS Statistics of Income table, 1986">
+      </div>
+    </a>
+    <figcaption>1986</figcaption>
+  </figure>
+</div>
+
+<div class="soi-cta">
+  <a class="soi-btn" href="tax-site-staging-appendix-b/appendix-b-irs-soi.pdf" target="_blank" rel="noopener">
+    Open full Appendix B (PDF)
+  </a>
+  <div class="soi-cta-sub">
+    Appendix B reproduces the complete IRS SOI table series in original formatting for verification.
+
+</div>
+
+
+<p class="soi-source">
+Source: U.S. Department of the Treasury, Internal Revenue Service, Statistics of Income.
+</p>
+
+<div class="note">
+
+
+  <p>
+  Note: Screenshots are preserved in original Bureau of Internal Revenue / IRS formatting
+  to maintain contemporaneous category definitions, reporting conventions, and tabular
+  structure. These reproductions ensure fidelity to primary source materials and allow
+  readers to verify historical aggregates and category changes without the risk of
+  transcription or normalization drift.
+  </p>
+<div class="soi-modal" id="soiModal">
+  <div class="soi-modal-dialog">
+    <div class="soi-modal-toolbar">
+      <button class="soi-modal-btn" id="soiClose">Close</button>
+    </div>
+    <div class="soi-modal-stage">
+      <img class="soi-modal-img" id="soiModalImg" src="" alt="">
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.soi-lightbox').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const modal = document.getElementById('soiModal');
+    const modalImg = document.getElementById('soiModalImg');
+    modalImg.src = this.href;
+    modal.classList.add('is-open');
+  });
+});
+
+document.getElementById('soiClose').addEventListener('click', function() {
+  document.getElementById('soiModal').classList.remove('is-open');
+});
+
+document.getElementById('soiModal').addEventListener('click', function(e) {
+  if (e.target.id === 'soiModal') {
+    this.classList.remove('is-open');
+  }
+});
+</script>
+
+
+</div>
