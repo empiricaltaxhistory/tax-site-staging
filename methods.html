@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <style>
+
+    html { overflow-y: scroll; }
+
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
       margin: 0;
@@ -17,18 +20,27 @@
       max-width: 760px;
       margin: 0 auto;
     }
-    nav {
-      font-size: 14px;
-      margin-bottom: 26px;
-      color: #666;
-    }
-    nav a {
-      color: #111;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
+   nav{
+  font-size: 14px;
+  margin: 0 0 26px 0;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+nav a{
+  white-space: nowrap;
+  color: #111;
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
     h1 {
       font-size: 32px;
       margin: 0 0 18px 0;
