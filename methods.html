@@ -6,40 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
   <style>
+:root{ --nav-h: 64px; }
 
-    html { overflow-y: scroll; }
+    html{
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
 
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      margin: 0;
-      padding: 40px 20px;
-      background: #fafafa;
-      color: #111;
-    }
+
+body{
+  margin: 0;
+  padding: calc(var(--nav-h) + 40px) 20px 40px 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #fafafa;
+  color: #111;
+}
+
     .container {
       max-width: 760px;
       margin: 0 auto;
     }
-   nav{
-  font-size: 18px;
-  margin: 0 0 26px 0;
-  color: #666;
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 14px;
-  flex-wrap: nowrap;
+  gap: 22px;
+  font-size: 18px;
+  line-height: 1;
+  background: #fafafa;
+  padding: 0 12px;
+  z-index: 1000;
 }
 
 nav a{
   white-space: nowrap;
   color: #111;
   text-decoration: none;
+  flex: 0 0 auto;
+  padding: 0;
+  margin: 0;
 }
 
 nav a:hover{
   text-decoration: underline;
 }
+
 
     h1 {
       font-size: 32px;
@@ -79,5 +95,5 @@ nav a:hover{
     <p>
       The full methodological framework—including formal definitions, data construction,
       transformations, and replication logic—is presented in
-      <a href="appendix.html#appendix-a-methodology">Appendix A: Methodology</a>.
+      <a href="appendix.html">Appendix A: Methodology</a>.
     </p>
