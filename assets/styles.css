@@ -5,3 +5,19 @@ figure img {
   width:100%;
   height:auto;
 }
+.figure-tight {
+width: 100%;
+max-width: 750px;
+margin: 1rem auto;
+}
+
+.figure-tight .frame {
+width: 100%;
+overflow: hidden;
+}
+
+.figure-tight img {
+display: block;
+width: 100%;
+height: auto;
+}
