@@ -53,7 +53,20 @@ line-height: 1.65;
 
 .manuscript p{
 margin: 0 0 1rem 0;
+page-break-before:auto !important;
+page-break-after:auto !important;
 }
+
+.manuscript p:has(+ .table-img),
+.manuscript p:has(+ .table-scroll){
+margin-bottom:.35rem;
+text-align:center;
+}
+
+.manuscript [style*="page-break"]{
+display:none;
+}
+
 
 .manuscript h1,
 .manuscript h2,
