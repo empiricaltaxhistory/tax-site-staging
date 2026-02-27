@@ -43,9 +43,6 @@ border-collapse: collapse;
 p.MsoNormal span:only-child{
   display:inline;
 }
-.MsoNormal{
-  margin-bottom:1rem;
-}
 
 
 p.MsoNormal[align="center"][style*="text-align:center"] img{
@@ -57,9 +54,7 @@ p.MsoNormal[align="center"]{
 margin-bottom:0.35rem;
 }
 
-p.MsoNormal[align="center"][style*="text-align:center"]{
   
-}
 
 img{
   display:block;
@@ -125,15 +120,20 @@ line-height: 1.65;
 }
 
 .manuscript p{
-margin: 0 0 1rem 0;
 page-break-before:auto !important;
 page-break-after:auto !important;
 }
 
-.manuscript p:has(+ .table-img),
-.manuscript p:has(+ .table-scroll){
-margin-bottom:.35rem;
-text-align:center;
+.manuscript p,
+.manuscript p.MsoNormal,
+.manuscript p[style*="margin"]{
+margin-top: 0 !important;
+margin-bottom: 1rem !important;
+}
+
+.manuscript p.table-title{
+margin-bottom: .35rem !important;
+text-align: center;
 }
 
 .manuscript [style*="page-break"]{
@@ -150,6 +150,8 @@ margin: 2.75rem 0 2rem 0;
 .manuscript .table-scroll{
 margin: 0.35rem auto 1.75rem auto;
 }
+
+
 
 body{
   margin: 0;
