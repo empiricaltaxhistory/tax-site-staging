@@ -35,3 +35,24 @@ a[href^="#_ftn"] .MsoFootnoteReference,
   line-height:0 !important;
   color:#1a5cff !important;
 }
+
+a[href^="#_ftn"],
+a[href^="#ftn"],
+.MsoFootnoteReference,
+.MsoFootnoteReference a,
+span.MsoFootnoteReference,
+span.MsoFootnoteReference a {
+color: #1a5cff !important;
+text-decoration: none !important;
+}
+
+a[href^="#_ftn"] .MsoFootnoteReference,
+a[href^="#ftn"] .MsoFootnoteReference,
+.MsoFootnoteReference,
+.MsoFootnoteReference a,
+span.MsoFootnoteReference,
+span.MsoFootnoteReference a {
+font-size: 0.8em !important;
+vertical-align: super !important;
+line-height: 0 !important;
+}
