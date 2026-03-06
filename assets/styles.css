@@ -22,14 +22,16 @@ width: 100%;
 height: auto;
 }
 
-/* Footnote numerators (Word-export structure) */
+/* Footnote numerators */
 a[href^="#_ftn"] {
-  color: inherit !important;
-  text-decoration: none !important;
+  color:#1a5cff !important;
+  text-decoration:none !important;
 }
 
-a[href^="#_ftn"] .MsoFootnoteReference {
-  font-size: 0.8em !important;
-  vertical-align: super !important;
-  line-height: 0 !important;
+a[href^="#_ftn"] .MsoFootnoteReference,
+.MsoFootnoteReference a {
+  font-size:0.8em !important;
+  vertical-align:super !important;
+  line-height:0 !important;
+  color:#1a5cff !important;
 }
